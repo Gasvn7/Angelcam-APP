@@ -7,13 +7,15 @@ build/
 
 # Python (Django backend)
 env/
-*.pyc
 __pycache__/
+*.pyc
 db.sqlite3
 *.log
+.env
 
-# MacOS
-.DS_Store
+# Logs
+*.log
 
-# Windows
-Thumbs.db
+# Editor-specific files
+.vscode/
+.idea/

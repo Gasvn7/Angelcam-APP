@@ -31,6 +31,8 @@ const Login = ({ onLoginSuccess }) => {
       <div className="bg-white p-8 rounded shadow-md w-full max-w-md mb-36">
         <h2 className="text-2xl mb-4 text-center font-semibold">Login</h2>
         <h4 className="text-base mb-4 text-center">Insert your Angelcam token</h4>
+        <span>You can use:</span>
+        <span>bbb62e2feb932606540dd85af86ee63c5e51ad94</span>
         <input
           type="text"
           value={token}
