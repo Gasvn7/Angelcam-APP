@@ -35,7 +35,7 @@ const Recording = ({ onLogout }) => {
       const headers = { "Authorization": `PersonalAccessToken ${token}` };
 
       try {
-        const response = await axios.post('http://localhost:8000/api/recordings/', { token, camId: id });
+        const response = await axios.post('https://angelcam-back.onrender.com/api/recordings/', { token, camId: id });
         let { recording_start, recording_end } = response.data;
 
         const startDate = parseISO(recording_start);
