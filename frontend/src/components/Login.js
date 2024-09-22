@@ -27,7 +27,7 @@ const Login = ({ onLoginSuccess }) => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-500">
+    <div className="flex items-center justify-center h-screen bg-gray-100">
       <div className="bg-white p-8 rounded shadow-md w-full max-w-md mb-36">
         <h2 className="text-2xl mb-4 text-center font-semibold">Login</h2>
         <h4 className="text-base mb-4 text-center">Insert your Angelcam token</h4>
@@ -48,7 +48,6 @@ const Login = ({ onLoginSuccess }) => {
         </button>
         {error && <div className="text-red-500 mt-4">{error}</div>}
       </div>
-      
     </div>
   );
 };
