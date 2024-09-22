@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-y@dtkzo^_+qm5z3-kl2&9%=6us!!2^4ngbr8@=76!m+p92qzu5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['angelcam-back.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -55,8 +55,10 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
+    "https://angelcam-project.netlify.app",
     "http://localhost:3000",
 ]
+
 
 
 ROOT_URLCONF = 'backend.urls'

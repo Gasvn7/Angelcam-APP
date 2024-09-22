@@ -10,9 +10,9 @@ const Login = ({ onLoginSuccess }) => {
     setIsloading(true);
     setError(null);
     try {
-      const response = await axios.post('http://localhost:8000/api/login/', { token });
+      const response = await axios.post('https://angelcam-back.onrender.com/api/login/', { token });
       const userData = response.data;
-      const sharedCameras = await axios.post('http://localhost:8000/api/cameras/', { token });
+      const sharedCameras = await axios.post('https://angelcam-back.onrender.com/api/cameras/', { token });
       const cameras = sharedCameras.data.results;
 
       localStorage.setItem('token', token);
